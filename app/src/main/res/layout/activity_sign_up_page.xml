@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/text_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doctor_in_nearby_area_dna"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_below="@id/text_app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo_image" />
+
+
+    <!-- Login with Google Button -->
+
+    <LinearLayout
+        android:id="@+id/login_with_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_logo"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#F3ECEC"
+        android:drawablePadding="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/google_logo"
+            android:contentDescription="@string/google_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_with_google"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/username"
+        android:paddingStart="10dp"
+        android:layout_below="@id/login_with_google"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:inputType="text"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:textColor="#333333"
+        tools:ignore="RtlSymmetry"/>
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_username"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/email"
+        android:paddingStart="10dp"
+        android:inputType="textEmailAddress"
+        android:background="#FFFFFF"
+        android:textColor="#333333"
+        tools:ignore="RtlSymmetry" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/password"
+        android:paddingStart="10dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:textColor="#333333"
+        tools:ignore="RtlSymmetry" />
+
+
+    <!--    &lt;!&ndash; Sign Up Button &ndash;&gt;-->
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_password"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        android:background="#1976D2"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roles">
+        <item>I am a Patient</item>
+        <item>I am a Doctor</item>
+    </string-array>
+
+    <string-array name="specialities">
+        <item>Select any Speciality</item>
+        <item>Cardiology</item>
+        <item>Family Physicians</item>
+        <item>Neurologists</item>
+    </string-array>
+
+    <string-array name="payment">
+        <item>only cash</item>
+        <item>only online</item>
+        <item>both</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+</resources>

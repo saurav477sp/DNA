@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment">
+
+    <!-- Wrap the LinearLayout with ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- App Information Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to DNA - Doctor Nearby Area"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find Nearby Doctors:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comprehensive Doctor Profiles:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explore detailed profiles of doctors and medical practitioners, including their specialties, qualifications, clinic timings, contact information, and patient reviews. Make informed decisions about your healthcare needs by accessing comprehensive information about each practitioner."
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appointment Booking Made Easy:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DNA simplifies the appointment booking process by allowing you to schedule appointments directly from the app. Say goodbye to long waiting times and phone calls – book your medical appointments conveniently and efficiently, all from the palm of your hand."
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Health, Your Priority:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At DNA, we prioritize your health and well-being above all else. Our mission is to empower individuals to make informed decisions about their healthcare by providing access to reliable, convenient, and personalized medical services."
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download DNA today and take control of your health journey. Whether you need a routine check-up, specialized treatment, or medical advice, DNA connects you with the best healthcare professionals in your area, ensuring you receive the care you deserve."
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="16dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

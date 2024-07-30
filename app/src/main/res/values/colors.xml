@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="my_primary">#FF5964</color>
+    <color name="my_secondary">#FFE74C</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="off_white">#FAFAFA</color>
+    <color name="light_gray">#C3C3C3</color>
+
+    <color name="chat_color_sender">#1E88E5</color>
+    <color name="chat_color_receiver">#7CB342</color>
+
+    <color name="background_color">#F5F5F5</color>
+
+    <!-- Text colors -->
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#757575</color>
+
+    <color name="Book_Appointment_button">#9BDC7F</color>
+    <color name="Feedback_button">#A7CDC6</color>
+
+    <!-- Button color -->
+    <color name="colorPrimary">#3F51B5</color>
+
+    <!-- Rounded corner background color for form layout -->
+    <color name="form_background_color">#FFFFFF</color>
+
+    <color name="background_for_cardView">#BEEADDC2</color>
+
+</resources>

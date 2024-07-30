@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dimens.xml -->
+<resources>
+    <dimen name="info_window_width">100dp</dimen>
+    <dimen name="info_window_height">100dp</dimen>
+</resources>

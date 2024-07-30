@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:id="@+id/text_find_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Doctor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speciality :"
+        android:layout_below="@id/text_find_doctor"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner_doctor_specialties"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@id/text_speciality"
+        android:layout_marginTop="10dp"
+        android:entries="@array/specialities"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_doctor_specialties"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/card_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/card_view_for_doctor_fragement"/>
+
+            <include layout="@layout/card_view_for_doctor_fragement"/>
+
+            <include layout="@layout/card_view_for_doctor_fragement"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

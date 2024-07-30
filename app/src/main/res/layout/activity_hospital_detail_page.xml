@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Name from pop-up box -->
+        <TextView
+            android:id="@+id/textViewHospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hospital name"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/primary_text_color"
+            android:paddingBottom="8dp" />
+
+        <!-- Doctor's name -->
+        <TextView
+            android:id="@+id/textViewDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr. John Doe"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/primary_text_color"
+            android:paddingBottom="8dp" />
+
+        <!-- Doctor's details -->
+        <TextView
+            android:id="@+id/textViewSpeciality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speciality: Cardiologist"
+            android:textSize="18sp"
+            android:textColor="@color/secondary_text_color"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewHospitalAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Address: 123 Main St, City, Country"
+            android:textSize="18sp"
+            android:textColor="@color/secondary_text_color"
+            android:paddingBottom="16dp" />
+
+        <!-- Book appointment button -->
+        <Button
+            android:id="@+id/buttonBookAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Booking form -->
+        <RelativeLayout
+            android:id="@+id/form_for_booking_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <!-- Full Name -->
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:background="#FFFFFF"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Age -->
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Age"
+                android:inputType="number"
+                android:layout_below="@+id/editTextFullName"
+                android:maxLength="3"
+                android:background="#FFFFFF"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp" />
+
+
+            <!-- Gender -->
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/editTextAge"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:text="Gender"/>
+
+            <Spinner
+                android:id="@+id/Gender"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:textAlignment="center"
+                android:layout_below="@id/editTextAge"
+                android:layout_toRightOf="@+id/textViewGender"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/gender"/>
+
+            <!--date and time-->
+            <LinearLayout
+                android:id="@+id/DateOfAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Gender"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewDateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:padding="13dp"
+                    android:text="Date : "/>
+
+                <EditText
+                    android:id="@+id/textViewSelectedDate"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:hint="DD/MM/YYYY HH:mm"
+                    android:paddingStart="10dp"
+                    android:background="#FFFFFF"
+                    android:textColor="#333333"
+                    android:inputType=""
+                    android:layout_marginEnd="8dp"/>
+
+
+                <ImageView
+                    android:id="@+id/imageViewDatePicker"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/date_picker"
+                    android:clickable="true"
+                    android:layout_marginTop="2dp"
+                    android:contentDescription="Date Picker Icon"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:background="#FFFFFF"
+                android:textColor="#333333"
+                android:layout_below="@+id/DateOfAppointment"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginTop="10dp" />
+
+
+            <!-- Problem -->
+            <EditText
+                android:id="@+id/editTextProblem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Problem"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:background="#FFFFFF"
+                android:textColor="#333333"
+                android:layout_below="@+id/editTextAddress"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginTop="10dp" />
+
+            <!-- Confirm booking button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/editTextProblem"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/buttonConfirmBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Booking"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

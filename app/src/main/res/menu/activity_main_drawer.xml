@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    tools:context=".MainActivity">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_appointment"
+            android:icon="@drawable/ic_menu_appointment"
+            android:title="Booked Appointment" />
+        <item
+            android:id="@+id/nav_doctor"
+            android:icon="@drawable/ic_menu_doctor"
+            android:title="Doctors" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_menu_location"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="Info" />
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="Log out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_menu_contactus"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>

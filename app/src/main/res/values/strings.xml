@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">DNA</string>
+    <string name="logo_image">logo_image</string>
+    <string name="dot_icone">dot_icone</string>
+    <string name="doctor_in_nearby_area_dna">Doctor In NearBy Area (DNA)</string>
+    <string name="google_logo">google_logo</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="i_already_have_an_account">I already have an account</string>
+    <string name="title_activity_map">Map_Activity</string>
+    <string name="info">With DNA, you can easily discover a wide range of healthcare providers in your local area. Whether you are seeking a general practitioner, specialist, or alternative medicine practitioner, DNA helps you locate the right healthcare professional with ease.</string>
+    <string name="appointment_fragment">Hello Appointment fragment</string>
+    <string name="doctor_fragment">Hello Doctor fragment</string>
+    <string name="map_fragment">Hello Map fragment</string>
+    <string name="info_fragment">Hello Info fragment</string>
+    <string name="log_out_fragment">Hello log_out fragment</string>
+    <string name="contact_us_fragment">Hello contact_us fragment</string>
+
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDpRX1O0Av57noKkibI0VvknpBCyQOG1k8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!-- strings.xml -->
+    <string name="doctor_name">Doctor Name: %1$s</string>
+    <string name="hospital_name">Hospital Name: %1$s</string>
+    <string name="rating">Rating: %1$s/10</string>
+    <string name="address">Address: %1$s</string>
+    <string name="specialty">Specialty: %1$s</string>
+
+    <string name="book_appointment">Book Appointment</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="doctor_name_format">Doctor Name : %1$s</string>
+    <string name="doctor_speciality">Speciality : %1$s</string>
+    <string name="hospital_address">Hospital Address : %1$s</string>
+
+
+</resources>
