@@ -1,4 +1,4 @@
-🧬 DNA - Doctor Nearby App
+🧬 DNA - Doctor Nearby Area
 
 Find Doctors Near You, Book Appointments with Ease! 🌍🏥
 
